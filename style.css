@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+}
+:root{
+  --cobalt: #0047ab;
+}
+h1{
+  color: var(--cobalt);
+}
+h2{
+  color: var(--cobalt);
+  font-style: italic;
+}
+h1, h2, h3, h4{
+    font-weight: bold;
+}
+th{
+  background-color: silver;
+  border: 1px solid black;
+}
+tr, td{
+  border: 1px solid black;
+}
+.logindiv{
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 75%;
+  padding: 30px;
+}
+.logindiv>span{
+  display: block;
+  text-align: center;
+}
+input[type=submit]{
+  border-radius: 0 5px 0 0;
+}
+table {
+  width: 75vw;
+  margin: 0 auto;
+  border-spacing: 1px;
+}
+
+.silverbg{
+  background-color:silver;
+}
+.logindiv>input[type=submit], a, .bluebox{
+  background: var(--cobalt);
+  color: white;
+  border-radius: 0 5px 0 0;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 3px;
+}
+.logindiv>input[type=submit]{
+  position: absolute;
+  left: 50vw;
+  top: 15vh;
+}
+.bluebordered, input[type=text], input[type=tel], input[type=number], input[type=email], input[type=password], input[type=date]{
+  border: 3px solid var(--cobalt);
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  margin: 3px;
+}
+
+.flexbox{
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+  /* border: 1px solid black; */
+  flex-wrap: wrap;
+  flex-shrink: 1 0 auto;
+}
+.flexchild{
+  /* flex: 1 0 21%; */
+  flex-shrink: 1 0 auto;
+}
+.centered{
+  width: 75vw;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+    justify-content: space-around;
+}
+ nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+}
+input[type=checkbox]{
+  border: 2px solid var(--cobalt);
+}
