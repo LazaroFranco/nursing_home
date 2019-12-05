@@ -22,7 +22,7 @@
     </form>
 
     <!-- Inline styling because I'm not going to use this anywhere else. -->
-    <section id="billinginformation" class="bluebordered" style="position: absolute; top: 10%; left: 30%;">
+    <section id="billinginformation" class="bluebordered">
       <p>$10 for every day</p>
       <p>$50 for every appointment</p>
       <p>$5 for every medicine/month</p>

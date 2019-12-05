@@ -28,23 +28,36 @@
   </head>
   <body>
 <h1>Additional Patient Information</h1>
-<label>Patient ID</label>
+
 <form method="post" name="moreinfo">
 <!-- <input type="number" name="patientID" step=1 min=0 required onchange="testfunction()" id="patientid"> -->
-<input type="number" name="patientID" step=1 min=0 required id="patientid">
+    <label class="bluebox">Patient</label>
+        <select class="bluebordered" type="text" name="patient_id">
+        <?php
+        $query = "SELECT * FROM users WHERE role='patient' AND is_approved=1;";
+        $result = mysqli_query($conn, $query);
+        $resultCheck = mysqli_num_rows($result);
+        if ($resultCheck > 0){
+          while($row = mysqli_fetch_assoc($result)){
+            echo "<option value=\"" . $row['ID'] . "\">". $row['ID'] . ": " .  $row['lastName'] . ", " . $row['firstName'] ."</option>";
+          }
+        }
+         ?>
+      </select>
+
 <br/>
-<label>Group</label>
+<label class="bluebox">Group</label>
 <input type="number" name="group" step=1 max=9 min=0 required>
 <br/>
-<label>Admission Date</label>
+<label class="bluebox">Admission Date</label>
 <input type="date" name="admissiondate" required>
 <br/>
-<label>Date</label>
+<label class="bluebox">Date</label>
 <input type="date" name="date" value="<?php echo $today ?>" required>
 <br/>
-<label>Doctor</label>
+<label class="bluebox">Doctor</label>
 <!-- <input type="text" name="doctor" required><br/> -->
-<select name="doctor">
+<select class="bluebordered" name="doctor">
   <?php
     //Do PHP and see how many doctors we have.
     $query= "SELECT * FROM users WHERE role='doctor' AND is_approved=1;";

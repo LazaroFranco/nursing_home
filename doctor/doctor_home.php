@@ -43,8 +43,21 @@
   <tr>
     <th class="silverbg">Patient</th>
     <th class="silverbg">Date</th>
+    <th class="silverbg">Comment</th>
   </tr>
-  <!-- Later on, this will be more PHP code. -->
+    <?php
+      $user = $_SESSION['ID'];
+      $query = mysqli_query($conn,"SELECT * FROM Appointments, users WHERE Appointments.patient_id = users.ID AND Appointments.doctor_id = $user;");
+
+      while($row = mysqli_fetch_array($query)){
+          echo "
+                <tr>
+                  <td name='name'>" . $row['firstName'] . " " . $row['lastName'] . "</td>
+                  <td name='date'>" . $row['date'] . "</td>
+                  <td name='comment'>" . $row['comment'] . "</td>
+                </tr>";
+        }
+     ?>
   <tr>
   </tr>
 </table>
