@@ -1,3 +1,4 @@
+
 *{
   box-sizing: border-box;
   font-family: sans-serif;
@@ -17,12 +18,14 @@ h1, h2, h3, h4{
     font-weight: bold;
 }
 th{
-  background-color: silver;
+  background-color: var(--cobalt);
   border: 1px solid black;
+  color: white;
 }
 tr, td{
-  border: 1px solid black;
+  border: 1px solid grey;
 }
+
 .logindiv{
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
@@ -43,7 +46,7 @@ table {
 }
 
 .silverbg{
-  background-color:silver;
+  background-color: var(--cobalt);
 }
 .logindiv>input[type=submit], a, .bluebox{
   background: var(--cobalt);

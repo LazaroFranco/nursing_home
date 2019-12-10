@@ -45,8 +45,10 @@ if (isset($_POST['cappt'])){
         }
          ?>
       </select>
+<br>
       <label class="bluebox">Date</label>
         <input class="bluebordered" type="date" name="date">
+<br>
       <label class="bluebox">Doctor</label>
         <select class="bluebordered" type="text" name="doctor_id">
         <?php
@@ -60,8 +62,10 @@ if (isset($_POST['cappt'])){
         }
          ?>
       </select>
+<br>
       <label class="bluebox">Comment</label>
         <textarea class="bluebordered" name="comment" required></textarea>
+<br>
       <input type="submit" name="cappt" value="Submit">
       <input type="reset" name="cancel" value="Cancel">
     </form>

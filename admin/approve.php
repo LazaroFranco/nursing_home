@@ -71,7 +71,7 @@ if (!$conn) {
           if (isset($_POST['delete'])) {
             foreach ($_POST['delete'] as $value) {
             echo "ID: " . $value . " has been updated";
-           $sql = "DELETE FROM users WHERE ID = '$value'";
+           $sql = "DELETE FROM users WHERE users.ID = '$value'";
            mysqli_query($conn, $sql);
             }
           }

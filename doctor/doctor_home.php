@@ -46,8 +46,7 @@
     <th class="silverbg">Comment</th>
   </tr>
     <?php
-      $user = $_SESSION['ID'];
-      $query = mysqli_query($conn,"SELECT * FROM Appointments, users WHERE Appointments.patient_id = users.ID AND Appointments.doctor_id = $user;");
+  $query = mysqli_query($conn,"SELECT * FROM daily_roster, users WHERE users.ID = daily_roster.supervisor");
 
       while($row = mysqli_fetch_array($query)){
           echo "

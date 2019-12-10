@@ -111,7 +111,7 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, PHP">
     <title>Registration Page </title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <script language="javascript">
 
     function dis_able()
@@ -126,7 +126,7 @@ mysqli_close($conn);
 
   <body>
     <header>Welcome!</header>
-    <button href="login.php">Login</button>
+    <a href="login.php">Login</a>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script type="text/javascript">
       function hidingSections(){
@@ -154,7 +154,7 @@ mysqli_close($conn);
       </script>
     <form action="register.php" name="register" method="POST">
       <label>Role:</label>
-      <select id="role" name="role" onchange="hidingSections()">
+      <select class="bluebordered" id="role" name="role" onchange="hidingSections()">
           <option  value="supervisor">Supervisor</option>
           <option value="caregiver">Caregiver</option>
           <option value="doctor">Doctor</option>
@@ -192,7 +192,7 @@ mysqli_close($conn);
           <input type="text" name="familyrelation">
         </section>
         <br>
-        <input type="submit" class="submit" name="register" value="Enroll!">
+        <input class="bluebox" type="submit" class="submit" name="register" value="Enroll!">
       </form>
     <footer>Copyright 2019</footer>
   </body>
