@@ -103,7 +103,6 @@ input[type=checkbox]{
   border: 2px solid var(--cobalt);
 }
 
-@media (min-width: 760px) {
   footer {
     margin-top: 6rem;
     display: flex;
