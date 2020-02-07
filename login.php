@@ -6,6 +6,7 @@
     <title>Splash Page</title>
   </head>
   <body>
+    <header>Franco's Nursing Home</header>
     <form method="post" name="loginform">
       <div class="logindiv"><span>Email: <input type="text" name="email"></span>
       <span>Password: <input type="password" name="password"></span>
@@ -53,5 +54,14 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
 // Also hash and salt that password.
 
 ?>
+    <footer>
+      <h2>Franco's Nursing Home</h2>
+      <address>
+        <p>750 E King St</p>
+        <p>Lancaster, PA 17602</p>
+        <p><a href="tel:1-717-299-7701" class="phone">717.299.7701</a></p>
+      </address>
+    </footer>
+
   </body>
 </html>

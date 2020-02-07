@@ -125,7 +125,7 @@ mysqli_close($conn);
   </head>
 
   <body>
-    <header>Welcome!</header>
+    <header>Franco's Nursing Home</header>
     <a href="login.php">Login</a>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script type="text/javascript">
@@ -194,6 +194,13 @@ mysqli_close($conn);
         <br>
         <input class="bluebox" type="submit" class="submit" name="register" value="Enroll!">
       </form>
-    <footer>Copyright 2019</footer>
+    <footer>
+      <h2>Franco's Nursing Home</h2>
+      <address>
+        <p>750 E King St</p>
+        <p>Lancaster, PA 17602</p>
+        <p><a href="tel:1-717-299-7701" class="phone">717.299.7701</a></p>
+      </address>
+    </footer>
   </body>
 </html>
